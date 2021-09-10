@@ -1,7 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:wght@300;400;700;900&display=swap');
 
 body {
   font-family: "Roboto", sans-serif;
+  background-image: url("../img/arcade.jpg");
+  color: #fff;
 }
 
 .navbar {
@@ -19,7 +21,7 @@ body {
 }
 
 .navbar .menu-item-div p:hover {
-  cursor: pointer;
+  cursor: crosshair;
 }
 
 .hero-banner {
@@ -28,11 +30,18 @@ body {
   margin-top: 50px;
 }
 
+.hero-banner .avatar img:hover {
+    width:300px;
+    transform: scale(1.2,1.2);
+
+}
+
 .hero-banner .avatar img {
   height: 300px;
   width: 500px;
   border-radius: 999px;
   box-shadow: 0px 5px 10px -5px #000000ff;
+  transition: ease-in .5s;
 }
 
 .user-name h1{
@@ -53,16 +62,36 @@ body {
 .skills img{
     height:200px;
     width: 200px;
-    animation: ease-in .3s;
+    transition: .5s;
 }
 
 .skills img:hover {
-    transform: scale(2,2)
+    transform: scale(1.5,1.5);
 }
 
-.skills .wrap {
-    Display: flex;
-    position:absolute;
+.skills img:hover + #skill-html{
+    font-size: 30px;
+} 
+
+.skills h2{
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+h2#skill-css{
+    color: rgb(0, 140, 255);
+}
+
+h2#skill-js{
+    color: rgb(207, 193, 0);
+}
+
+h2#skill-html{
+    position: absolute;
+    padding-top: 250px;
+    padding-left: 50px;
+    color: rgb(170, 97, 2);
 }
 
 .skills .css, .skills .js{
@@ -71,5 +100,61 @@ body {
 
 .navbar .menu-item-div a{
     text-decoration: none;
-    color: black;
+    color: rgb(255, 255, 255);
 }
+
+.habilidade h2 {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.line {
+    height: 2px;
+    background:rgb(255, 255, 255);
+    width:0px;
+}
+
+.skill-bar-box {
+    height: 35px;
+    background-color: #606060;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.skill-bar {
+    height:100%;
+    display: flex;
+    align-items: center;
+    background: rgb(1, 90, 1);
+    justify-content: flex-end;
+    font-weight: 700;
+    width:0;
+    transition: ease-in .4s;
+    overflow: hidden;
+    position:absolute;
+    left:0;
+}
+
+.skill-bar-box.html:hover .skill-bar {
+    width:69%;
+}
+
+.skill-bar-box.css:hover .skill-bar {
+    width:69%;
+}
+
+.skill-bar-box.js:hover .skill-bar {
+    width:69%;
+}
+
+.skill-bar p {
+    margin:0;
+    margin-right: 20px;
+}
+

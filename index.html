@@ -7,58 +7,96 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <title>Curriculum</title>
   </head>
+
   <body>
     <div class="navbar">
       <div class="historico-menu menu-item-div">
         <p class="menu-item">Historico</p>
+        <div class="line"></div>
       </div>
       <div class="habilidades-menu menu-item-div">
         <a href="#habilidades">
-            <p class="menu-item">Habilidades</p>
+          <p class="menu-item">Habilidades</p>
+          <div class="line"></div>
         </a>
       </div>
       <div class="contato-menu menu-item-div">
         <p class="menu-item">Contato</p>
+        <div class="line"></div>
       </div>
     </div>
     <div class="hero-banner">
       <div class="avatar">
-          <img src="/Treinamento/aula1/assets/img/IMG_20210503_184127.JPG" alt="asiatico com cabeça de cavalo">
+        <img
+          src="/Treinamento/aula1/assets/img/IMG_20210503_184127.JPG"
+          alt="asiatico com cabeça de cavalo"
+        />
       </div>
     </div>
     <div class="user-name">
-        <h1 class="name">
-            Gabriel Nishida
-        </h1>
+      <h1 class="name">Gabriel Nishida</h1>
     </div>
     <div class="container">
-        <div class="resume">
-            <h2 class="resume-title">Resumo</h2>
-            <p class="resume-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit pellentesque sapien sed ornare. Proin eu cursus ligula. Nam rhoncus ipsum vel est tempus consectetur. Vestibulum id sapien consectetur, viverra nisi eu, sagittis libero. Ut eu consequat diam. In et gravida dolor. Curabitur eget accumsan est. Nulla facilisi. In venenatis commodo augue, id cursus massa iaculis eget.</p>
+      <div class="resume">
+        <h2 class="resume-title">Resumo</h2>
+        <p class="resume-text">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit
+          pellentesque sapien sed ornare. Proin eu cursus ligula. Nam rhoncus
+          ipsum vel est tempus consectetur. Vestibulum id sapien consectetur,
+          viverra nisi eu, sagittis libero. Ut eu consequat diam. In et gravida
+          dolor. Curabitur eget accumsan est. Nulla facilisi. In venenatis
+          commodo augue, id cursus massa iaculis eget.
+        </p>
+      </div>
+      <div class="skills">
+        <div class="row">
+          <div class="css">
+            <h2 class="lilbro" id="skill-css">CSS</h2>
+            <img
+              src="/Treinamento/aula1/assets/img/css.png"
+              alt=""
+              class="css"
+            />
+          </div>
+          <div class="html">
+            <h2 class="lilbro" id="skill-html">HTML</h2>
+            <img
+              src="/Treinamento/aula1/assets/img/html.png"
+              alt=""
+              class="html"
+            />
+          </div>
+          <div class="js">
+            <h2 class="lilbro" id="skill-js">JS</h2>
+            <img src="/Treinamento/aula1/assets/img/js.png" alt="" class="js" />
+          </div>
         </div>
-        <div class="skills">
-            <div class="row">
-                <div class="css">
-                    <img src="/Treinamento/aula1/assets/img/css.png" alt="" class="css">
-                </div>
-                <div class="html">
-                    <img src="/Treinamento/aula1/assets/img/html.png" alt="" class="html">
-                </div>
-                <div class="js">
-                    <img src="/Treinamento/aula1/assets/img/js.png" alt="" class="js">
-                </div>
-                <div class="wrap">
-                    <h2 class="skill-name">CSS</h2>
-                    <h2 class="skill-name">HTML</h2>
-                    <h2 class="skill-name">JS</h2>
-                </div>
-            </div>
+      </div>
+      <div class="habilidade">
+        <h2 class="habilidades-titles"><br />Habilidades</h2>
+
+        <div class="skill-bar-box html">
+            <p>HTML</p>
+          <div class="skill-bar"><p>69%</p></div>
         </div>
-        <div class="habilidade">
-                <div class="row">
-                    <h2 class="habilidades-titles">Habilidades</h2>
-                </div>
+        <div class="skill-bar-box css">
+            <p>CSS</p>
+          <div class="skill-bar"><p>69%</p></div>
         </div>
+        <div class="skill-bar-box js">
+            <p>JS</p>
+          <div class="skill-bar"><p>69%</p></div>
+        </div>
+      </div>
+      <div class="form-contact">
+          <fotm id="formcontact">
+                <input type="text" id ="name" placeholder="nome">
+                <input type="text" id ="email" placeholder="E-mail">
+                <input type="text" placeholder="Sua mensagem" id="message">
+                <button id="send-contacr" type="submit">Enviar</button>
+          </form>
+      </div>
     </div>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
